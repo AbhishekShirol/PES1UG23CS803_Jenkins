@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
+                    sh 'invalid_command_here'  // Intentional error
                     sh './output'  // Run the compiled binary
                 }
             }
